@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8080
     , event_url = 'http://www.hccg.gov.tw/web/Message?FP=D40000001852000008_2';
 
 app.use(cors({
-  allowedOrigins: '*'
+  allowedOrigins: ['*']
 }));
 
 app.get('/', (req, res) => {
