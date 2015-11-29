@@ -13,6 +13,7 @@
     "asyncawait": "^1.0.1",
     "babel": "^5.8.34",
     "cheerio": "^0.19.0",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "express-cors": "0.0.3",
     "lodash": "^3.10.1",

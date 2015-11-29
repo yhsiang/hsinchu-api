@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'express-cors';
+import cors from 'cors';
 import request from 'request';
 import cheerio from 'cheerio';
 import async from 'asyncawait/async';
@@ -13,9 +13,7 @@ const PORT = process.env.PORT || 8080
     , news_url = 'http://www.hccg.gov.tw/web/News?FP=D40000001852000002'
     , event_url = 'http://www.hccg.gov.tw/web/Message?FP=D40000001852000008_2';
 
-app.use(cors({
-  allowedOrigins: ['*']
-}));
+app.use(cors());
 
 app.get('/', (req, res) => {
   return res.json({ message: 'Welcome to HSINCHU API Server!' });
