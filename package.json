@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "asyncawait": "^1.0.1",
     "babel": "^5.8.34",
     "cheerio": "^0.19.0",
     "express": "^4.13.3",
+    "express-cors": "0.0.3",
+    "lodash": "^3.10.1",
     "request": "^2.67.0"
   }
 }
